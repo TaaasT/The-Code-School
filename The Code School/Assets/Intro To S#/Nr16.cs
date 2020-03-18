@@ -5,7 +5,7 @@ using UnityEngine;
 public class Nr16
 {
     private float health = 100f;
-    private string name = "Wizard";
+    private string name = "Default";
 
     public Nr16()
     {
@@ -19,7 +19,7 @@ public class Nr16
 
     public void PlayerInfo()
     {
-        Debug.Log("Player Name Is: " + name + "And Players Health Is: " + health);
+        Debug.Log("Player Name Is: " + name + " And Players Health Is: " + health);
     }
 
 
@@ -33,7 +33,24 @@ public class Nr16
       set{
             health = value;
         }
-    }    
+    }
+
+    public string Name  
+    {
+        get
+        {
+            return name;
+        }
+        set
+        {
+            name = value;
+        }
+    }
+    // Detta e till lektion 17
+    public virtual void Attack()
+    {
+        Debug.Log("The player is attacking");
+    }
 
 
 
