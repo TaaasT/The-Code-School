@@ -11,7 +11,10 @@ public class Nr14Constructor : MonoBehaviour
     {
         Nr13ClassesOObjects player = new Nr13ClassesOObjects();
         player.Player("Archer", 50f);
-        player.Player("Knight", 100f);
+
+        Nr13ClassesOObjects wizard = new Nr13ClassesOObjects();
+        wizard.health = 10f;
+
     }
 
     // Update is called once per frame
