@@ -13,7 +13,7 @@ public class Nr11Arrays : MonoBehaviour
         // data.length är alltid sista nummret i din array. smidigare att använda det data.length fall i fall du skulle ändra längden.
         for(int i = 0; i < data.Length; i++)
         {
-            data[i] = Random.Range(0, 100);
+            data[i] = i;
             //print("The element at index" + i + "has a value of " + data[i]);
         }
         
