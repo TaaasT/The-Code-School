@@ -15,4 +15,11 @@ public class Nr13ClassesOObjects
         Debug.Log("Player name is " + name + " And Players Health Is " + health);
     }
 
+    //Denna e skapad till Nr14Constructor!!
+    public void Player(string name, float health)
+    {
+        this.name = name;
+        this.health = health;
+        PlayerInfo();
+    }
 }
