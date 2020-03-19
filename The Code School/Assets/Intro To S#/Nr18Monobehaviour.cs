@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nt18Monobehaviour : MonoBehaviour
+public class Nr18Monobehaviour : MonoBehaviour
 {
    //basic grejer kan redan detta..
     
