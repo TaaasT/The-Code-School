@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        
+        StartCoroutine(SpawnBombs());
     }
 
     IEnumerator SpawnBombs()
@@ -20,6 +20,6 @@ public class Spawner : MonoBehaviour
         Instantiate(bomb, new Vector2(Random.Range(minX, maxX), transform.position.y),
             Quaternion.identity);
 
-
+        StartCoroutine(SpawnBombs());
     }
 }
