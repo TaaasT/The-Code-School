@@ -28,14 +28,17 @@ public class PlayerScript : MonoBehaviour
             currentPos.x -= speed * Time.deltaTime;
         }
 
-        if(currentPos.x < minX)
-        {
-            currentPos.x = minX;
-        }
-        if (currentPos.x > maxX)
-        {
-            currentPos.x = maxX;
-        }
+        currentPos.x = Mathf.Clamp(currentPos.x, minX, maxX);
+
         transform.position = currentPos;
     }
+
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if(target.tag == "Bomb")
+        {
+            Time.timeScale = 0f;
+        }
+    }
+
 }
